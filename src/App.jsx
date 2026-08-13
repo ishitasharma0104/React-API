@@ -1,8 +1,11 @@
 import React from 'react'
+import CompletedToDo from './Components/Q1/CompletedToDo'
 
 const App = () => {
   return (
-    <div>App</div>
+    <div>
+      <CompletedToDo/>
+    </div>
   )
 }
 
