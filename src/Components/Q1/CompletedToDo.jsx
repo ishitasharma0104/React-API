@@ -16,7 +16,26 @@ const CompletedToDo = () => {
 );
   return (
     
-    <div>CompletedToDo</div>
+    <div>
+      {
+        apiData
+        .filter((a)=>{
+          return a.completed===true;
+
+        })
+        .map((a)=>{
+        return(
+          <div key={a.id}>
+            <h3>{a.id}</h3>
+            <p>{a.title}</p>
+
+
+          </div>
+        )
+
+      })
+      }
+      </div>
   )
 }
 
